@@ -1,0 +1,59 @@
+.nav-bar--logo{
+    width: 80px;
+}
+
+.nav-bar-container{
+    margin: 0 15%;
+}
+
+.nav-items a {
+    font-size: 2.1rem;
+}
+
+.social-items img{
+    width: 30px;
+    margin: 0 3px;
+}
+
+.social-items .youtube{
+    width: 25px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+.bandmembers_container{
+    width: 90%;}
+
+
+.bandmembers-profile_slider {
+    justify-content: space-evenly;
+    overflow-y: unset;
+    overscroll-behavior-x: unset;
+}
+
+.left-item{
+   display: none;
+
+}
+
+ .right-item{
+   display: none;
+}
+
+.bandmembers-profile-container{
+    width: 140px;
+    margin: 0;
+}
+
+
+.shop-items-container{
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.shop-items{
+    display: inline-block;
+    
+}
