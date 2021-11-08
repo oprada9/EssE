@@ -1,0 +1,115 @@
+header {
+    height: 80px;
+}
+
+.nav-bar--logo{
+    width: 70px;
+}
+
+.nav-bar-container{
+    margin: 0 15%;
+}
+
+.nav-items {
+    padding: 0 20px;
+}
+
+.nav-items a {
+    font-size: 2.5rem;
+}
+
+.social-container {
+    margin-top: -10px;
+}
+
+.social-items img{
+    width: 40px;
+    margin: 0 3px;
+}
+.social-items .youtube{
+    width: 35px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bandinfo-history-container h1{
+    font-size: 2.5rem;
+}
+
+.bandinfo-history-container .bandinfo-paragraph-container{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.bandmembers_container{
+    height: 370px;
+    padding-top: 30px;
+
+}
+
+.bandmenbers-title{
+    font-size: 2.5rem;
+    top: -30px;
+}
+
+.bandmembers-profile_slider {
+    height: 360px;
+    padding-top: 22px;
+}
+
+.bandmembers-profile-container{
+    width: 200px;
+    height: 290px;
+    padding-top: 5px;
+}
+
+.bandmenbers-member-container{
+    width: 200px;
+    height: 260px;
+    padding-top: 5px;
+}
+
+
+.bandmembers-profile-container img{
+    width: 190px;
+    border-radius: 3px;
+}
+
+.bandmembers-profile_name{
+    font-size: 2rem;
+}
+
+.bandmembers-profile-container p{
+    font-size: 1.8rem;
+}
+
+.shop-container_title{
+    font-size: 2.5rem;
+}
+
+.shop-items{
+    width: 300px;
+    height: 310px;
+}
+
+.shop-items img{
+    width: 250px;
+    height: 250px;
+}
+
+.shop-items h3{
+    font-size: 1.8rem;
+}
+
+.shop-items p{
+    font-size: 1.6rem;
+}
+
+footer h4{
+    font-size: 1.4rem;
+
+}
+footer p{
+    font-size: 1.4rem;
+}
