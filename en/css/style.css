@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: '"Alumni Sans"', sans-serif;
+}
+
+body{
+    background-image: url(../Assets/img/backgrounds/background_page_dark.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    padding: 3px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid 2px rgb(0,0,0, .04);
+}
+
+
+.nav-bar--logo{
+    flex-grow: 0.6;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.nav-bar--logo img {
+    width: 70px;
+}
+
+
+.nav-bar-container{
+    flex-grow: 2;
+}
+
+.nav-list-container {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-items{
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.nav-items:hover{
+    transform: scale(1.1);
+    transition: 5ms ease-in-out;
+}
+
+.nav-items a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.bar-nav--social{
+    flex-grow: 0.5;
+    padding-top: 3px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: -8px;
+}
+
+
+.social-items img{
+    width: 20px;
+    margin: 0 2px;
+}
+
+.social-items:hover{
+    transform: scale(1.1);
+    transition: 5ms ease-in-out;
+}
+
+.social-items .youtube{
+    width: 15px;
+    padding: 0;
+    margin-top: 7px;
+}
+
+.language {
+    flex-grow: 0.2;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: -5px;
+}
+
+.language > a {
+    display: block;
+    width: 15px;
+    height: 12px;
+}
+
+.language > a:hover{
+    transform: scale(1.1);
+    transition: 2ms ease-in;
+
+}
+
+.language > a > img{
+    width: 100%;
+    margin: 0 1px;
+}
+
+
+/*========== Cover image section ==========*/
+
+.cover-container{
+    padding: 20px 0 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.cover-container img{
+    width: 90vw;
+    max-width: 650px;
+}
+
+/*========== Cover image section end ==========*/
+
+/*========== Band information ==========*/
+
+
+.division-bandifo__icon{
+    top: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-image: url(../Assets/img/backgrounds/blood.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+.bandinfo-history-container{
+    position: relative;
+    display: block;
+    top: -20px;
+    bottom: 0; width: 90%;
+    padding: 40px;
+    margin: 0 auto 10px;
+    background-image: linear-gradient(180deg, rgb(224, 224, 224) 10px, rgb(224, 224, 224, .7) );
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+}
+
+.bandinfo-history-container h1{
+    top: 20px;
+    width: 150px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px auto 20px;
+    background-color: whitesmoke;
+    border: outset 4px white;
+    border-radius: 5px;
+}
+
+.bandinfo-history-container .bandinfo-paragraph-container{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    border: 3px rgb(254, 254, 254, .4) outset;
+    padding: 20px 20px 10px;
+    background-color: rgb(254, 254, 254, .4);
+    color: #2d2d2d;
+}
+
+.bandinfo-history-container .bandinfo-paragraph-container p{
+    margin: 10px;
+    
+}
+
+/*================== Members ==============*/
+.bandmembers{
+    background-color: rgb(0,0,0, .7);
+    padding: 5px;
+    border-top: white inset 3px;
+    border-bottom: white inset 3px ;
+}
+
+.bandmembers_container{
+    position: relative;
+    width: 220px;
+    height: 260px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(255,255,255, .2);
+    border: inset white 5px;
+    outline: 3px inset #a7a7a7;
+    outline-offset: -7px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+}
+
+.bandmebers-title{
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 75px);
+    width: 150px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px auto 20px;
+    background-color:whitesmoke;
+    border: outset 4px white;
+    border-radius: 5px;
+}
+
+
+.division-bandifo__icon, .bandinfo-history-container h1, .bandmebers-title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bandmembers-profile_slider{
+    display: flex;
+    height: 245px;
+    padding-top: 37px;
+    overflow-y: scroll;
+    overscroll-behavior-x: unset;
+    scroll-snap-type: x proximity;
+}
+
+.bandmembers-profile_slider::-webkit-scrollbar {
+    display: none;
+}
+
+.bandmembers-profile-container{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 210px;
+    padding: 5px 3px 10px 0;
+    scroll-snap-align: center;
+    margin-right: 20%;
+    margin-left: 22%;
+}
+
+.left-item{
+    position: absolute;
+    top: 120px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    background-image:url('../Assets/icons/scrollarrowtoleft.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+ .right-item{
+    position: absolute;
+    top: 120px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    background-image:url('../Assets/icons/scrollarrowtoright.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;;
+}
+
+.bandmenbers-member-container{
+    width: 140px;
+    height: 180px;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 4px;
+    transition: transform 500ms ease-in;
+}
+
+.bandmenbers-member-container:hover{
+    transform: scale(1.2);
+    transition: 500ms ease-in-out;
+}
+
+
+.bandmenbers-member-container img{
+    width: 130px;
+    border-radius: 3px;
+}
+
+.bandmembers-profile_name{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 2px 5px 0;
+    margin-bottom: 3px;
+}
+
+.bandmembers-profile-container p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 0 5px;
+    color: grey;
+    list-style: none;
+}
+
+
+/*=============== Section Shop =================*/
+
+.shop-container{
+    width: 90%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.shop-container_title{
+    width: 150px;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem; 
+    font-weight: bold;
+    background-color: whitesmoke;
+    border: outset 4px white;
+    border-radius: 5px;
+}
+
+
+.shop-items-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.shop-items-container .note_shop{
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(0,0,0, .9);
+    border-radius: 50px;
+}
+
+.shop-items-container .note_shop a{
+    text-decoration: none;
+    color: grey
+}
+
+.shop-items{
+    width: 220px;
+    height: 250px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    background-color: rgb(255,255,255, .9);
+    border: outset 4px rgb(255,255,255, .4);
+    border-radius: 5px;
+    
+}
+
+
+.shop-items h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.shop-items p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+.shop-items img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: solid 4px rgb(0,0,0, .4);
+    border-radius: 4px;
+}
+
+/*=============== footer =================*/
+
+footer{
+    height: 70px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer h4{
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+footer p{
+    font-size: 1.2rem;
+}
+
+footer p b {
+    color: rgb(219, 219, 219);
+}
+
+
+
